@@ -1,7 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.thinkwisesoftware.update-quota" version="--path" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="com.thinkwisesoftware.update-quota" version="1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>updateQuota</name>
     <js-module name="updateQuota" src="www/updateQuota.js">
-        <clobbers target="cordova.plugins.updateQuota" />
+        <clobbers target="cordova.plugins.updateQuota"/>
     </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="updateQuota">
+                <param name="ios-package" value="updateQuota"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/updateQuota.m"/>
+    </platform>
 </plugin>
