@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function(arg0, success, error) {
-    exec(success, error, "updateQuota", "coolMethod", [arg0]);
+exports.updateStorageQuota = function(newQuota, success, error) {
+    exec(success, error, "updateQuota", "updateStorageQuota", [newQuota]);
 };
