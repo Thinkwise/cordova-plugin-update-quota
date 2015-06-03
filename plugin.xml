@@ -11,5 +11,6 @@
             </feature>
         </config-file>
         <source-file src="src/ios/updateQuota.m"/>
+        <framework src="libsqlite3.dylib"/>
     </platform>
 </plugin>
