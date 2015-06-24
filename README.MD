@@ -11,7 +11,7 @@ Clone this repo and install the plugin by executing `cordova plugin add <folder>
 
 ## How to use
 
-```
+```JavaScript
 var newQuota = 100 * 1024 * 1024; // 100MB
 cordova.require("com.thinkwisesoftware.update-quota.updateQuota").updateStorageQuota(newQuota, successCallback, errorCallback);
 ```
